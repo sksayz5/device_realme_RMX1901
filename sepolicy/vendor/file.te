@@ -1,0 +1,37 @@
+# Oppo display
+type sysfs_oppo_display, fs_type, sysfs_type;
+
+# Touchpanel
+type proc_touchpanel, fs_type, proc_type;
+
+# Oppo Project version
+type proc_oppoversion, fs_type, proc_type;
+
+# Oppo FP
+type proc_oppo_fp, fs_type, proc_type;
+
+# Camera
+type persist_camera_file, file_type;
+
+# Devinfo
+type proc_devinfo, fs_type, proc_type;
+
+# Audio
+type persist_audio_file, file_type , vendor_persist_type;
+type proc_audio_file, file_type, data_file_type, core_data_file_type;
+
+# FPS Info
+type sysfs_fps, sysfs_type, fs_type;
+
+# LED/LCD
+type sysfs_led_file, sysfs_type, fs_type;
+type sysfs_lcd_file, sysfs_type, fs_type;
+
+# Power stats
+type sysfs_iio, sysfs_type, fs_type;
+type sysfs_restart, sysfs_type, fs_type;
+
+type vulkan_hal, file_type;
+
+# GCam
+type public_adsprpcd_file, file_type;
