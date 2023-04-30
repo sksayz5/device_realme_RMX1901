@@ -26,5 +26,5 @@ task:
       depends_on:
         - Lint
         - Test
-      only_if: $BRANCH == "master" # 
+      only_if: $BRANCH == "octavi" # 
       publish_script: yarn run publish
