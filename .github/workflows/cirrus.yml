@@ -1,0 +1,5 @@
+test_task:
+  container:
+    image: openjdk:latest
+  test_script: ./gradlew test
+
