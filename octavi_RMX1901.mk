@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_WITH_GAPPS := true
+WITH_GAPPS := true
 BUILD_TARGET_WANTS_FOD_ANIMATIONS := true
 TARGET_USES_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
@@ -36,7 +36,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="cheetah-user 13 TQ2A.230505.002 9891397 release-keys" \ 
-    PRODUCT_NAME="RMX1901"
+    PRODUCT_NAME=RMX1901
     
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ2A.230505.002/9891397:user/release-keys
