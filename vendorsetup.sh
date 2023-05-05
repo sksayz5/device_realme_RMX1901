@@ -1,10 +1,10 @@
 # Vendor Tree
 echo 'Cloning Vendor tree [1/6]'
-git clone git@github.com:ashim-anwar/vendor_realme_RMX1901-13.git -b 13 vendor/realme/RMX1901
+git clone git@github.com:shravansayz/vendor_realme_RMX1901_13.git -b 13 vendor/realme/RMX1901
 
 # Kernel Tree
 echo 'Cloning Kernel tree [2/6]'
-git clone git@github.com:RMX1901/kernel_realme_RMX1901.git -b x.319 kernel/realme/RMX1901
+git clone git@github.com:shravansayz/kernel_realme_RMX1901.git -b x.319 kernel/realme/RMX1901
 
 # Realme In-Screen Proximity Patch
 echo 'Patching Realme In-Screen Proximity [3/6]'
