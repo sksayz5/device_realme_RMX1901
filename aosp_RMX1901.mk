@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,19 +8,19 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-
-# Inherit some common Octavi stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common Project-Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS := true
-BUILD_TARGET_WANTS_FOD_ANIMATIONS := true
-TARGET_USES_BLUR := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-OCTAVI_BUILD_TYPE := UNOFFICIAL
-OCTAVI_MAINTAINER := SHRAVAN
+ELIXIR_MAINTAINER := SHRAVAN
+ELIXIR_BUILD_TYPE := UNOFFICIAL 
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 
 # Inherit from RMX1901 device
@@ -29,15 +29,17 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := Realme
-PRODUCT_NAME := octavi_RMX1901
+PRODUCT_NAME := aosp_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="cheetah-user 13 TQ2A.230505.002 9891397 release-keys" \ 
-    PRODUCT_NAME=RMX1901
-    
+    PRIVATE_BUILD_DESC="cheetah-user 13 TQ2A.230505.002 9891397 release-keys" \
+    PRODUCT_NAME="RMX1901" \
+    TARGET_DEVICE="RMX1901"
+
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := google/cheetah/cheetah:13/TQ2A.230505.002/9891397:user/release-keys
 
