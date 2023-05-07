@@ -11,6 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Project-Elixir stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 ELIXIR_MAINTAINER := SHRAVAN
 ELIXIR_BUILD_TYPE := UNOFFICIAL 
@@ -22,6 +23,8 @@ TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_USES_BLUR := true
+FORCE_AOSP_DIALER := true
+
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
