@@ -21,7 +21,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-
+TARGET_USES_BLUR := true
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
