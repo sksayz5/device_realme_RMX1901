@@ -2,10 +2,9 @@
 echo 'Cloning Vendor tree [1/4]'
 git clone git@github.com:H1mJT/vendor_realme_RMX1901_13.git vendor/realme/RMX1901
 
-
 #Kernel tree
 echo 'Cloning Kernel tree [2/4]'
-git clone --recurse-submodules git@github.com:H1mJT/kernel_realme_RMX1901.git -b x.337_ksu kernel/realme/RMX1901
+git clone --recurse-submodules git@github.com:shravansayz/kernel_realme_RMX1901.git -b x.337_ksu kernel/realme/RMX1901
 
 #Syncing KernelSU to latest source and avoid a conflict
 echo "Syncing KernelSU to latest source [3/4]"
