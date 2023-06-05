@@ -17,7 +17,7 @@
 #include <compositionengine/UdfpsExtension.h>
 
 uint32_t getUdfpsZOrder(uint32_t z, bool touched) {
-    return touched ? 1090519091 : z;
+    return touched ? z | FOD_PRESSED_LAYER_ZORDER : z;
 }
 
 uint64_t getUdfpsUsageBits(uint64_t usageBits, bool) {
