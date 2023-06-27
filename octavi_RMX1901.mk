@@ -20,7 +20,7 @@ EXTRA_UDFPS_ANIMATIONS := true
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
-OCTAVI_MAINTAINER := SHRAVAN
+OCTAVI_MAINTAINER := Shravansayzz
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
